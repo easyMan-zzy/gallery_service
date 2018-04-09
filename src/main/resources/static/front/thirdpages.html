@@ -19,18 +19,12 @@
 			<!--轮播图-->
 			<div class="sliderbg" id="sliderbg">
 				<a class="slider-left" href="javascript:void(0)" ><img src="img/slider-left.png"/></a>
-				<ul class="slider-ul">
-					<li><img src="img/slider0.png"></li>
-					<li style="display:none;"><img src="img/slider1.png"></li>
-					<li style="display:none;"><img src="img/slider2.png"></li>
-					<li style="display:none;"><img src="img/slider3.png"></li>
+				<ul id="sysSlides" class="slider-ul">
+
 				</ul>
 				<a class="slider-right"   href="javascript:void(0)" ><img src="img/slider-right.png"/></a>
-				<div class="slider-bot">
-					<span class="current"></span>
-					<span></span>
-					<span></span>
-					<span></span>
+				<div id="sysSlidesBot" class="slider-bot">
+
 				</div>
 			</div>
 			<!--引导页主体部分-->
@@ -89,15 +83,25 @@
 		<!-- Initialize Swiper -->
     	<script>
 
+            $("#sysSlides").html("");
+            $("#sysSlidesBot").html("");
+            $.each(config_sysSlides,function(index,value){
+                if (index==0) {
+                    var temp = '<li><img src="'+value+'"></li>';
+                    var temp1 = '<span class="current"></span>';
+                    $("#sysSlides").append(temp);
+                    $("#sysSlidesBot").append(temp1);
+                }else {
+                    var temp = '<li style="display:none;"><img src="'+value+'"></li>';
+                    var temp1 = '<span></span>';
+                    $("#sysSlides").append(temp);
+                    $("#sysSlidesBot").append(temp1);
+                }
+            });
+
             $(function() {
                 $("#sysLogo").attr('src',config_sysLogo);
                 $("#sysName").html(config_sysName);
-
-                $("#sysSlides").html("");
-                $.each(config_sysSlides,function(index,value){
-                    var temp = '<div class="swiper-slide"><img src="'+value+'"/></div>';
-                    $("#sysSlides").append(temp);
-                });
 
                 $("#zhuban").html("");
                 $.each(config_zhuban,function(index,data){
