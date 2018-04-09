@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>科普画廊动态管理及资源共享系统</title>
-		<link rel="stylesheet" type="text/css" href="css/kepuhualang.css"/>
-		<link rel="stylesheet" href="css/swiper.min.css">
-		<link rel="stylesheet" type="text/css" href="css/swipershoudong.css"/>
-		<script src="js/subSystemConfig/city_ningbo.js" type="text/javascript"></script>
-		<script src="js/subSystemConfig/config_ningbo.js" type="text/javascript"></script>
-		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ATK9QB3HXwUP9NfqWMPDYu4g5YGdANiC"></script>
-		<style type="text/css">
+<head>
+	<meta charset="UTF-8">
+	<title>科普画廊动态管理及资源共享系统</title>
+	<link rel="stylesheet" type="text/css" href="css/kepuhualang.css"/>
+	<script src="js/subSystemConfig/city_ningbo.js" type="text/javascript"></script>
+	<script src="js/subSystemConfig/config_ningbo.js" type="text/javascript"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ATK9QB3HXwUP9NfqWMPDYu4g5YGdANiC"></script>
+
+	<style type="text/css">
 		/*轮播图*/
-		.pc-banner {background: url(img/slidebg.jpg) no-repeat center top/100% auto;
-				width: 100%;
-				float: left;
-		}
 		/*地图样式*/
 		.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
 		.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
-		</style>
-	</head>
+	</style>
+</head>
 
-	<body>
+
+<body>
 		<div class="yindaobg">
 			<!--头部logo和名字-->
 			<ul class="yd-header clearfix">
@@ -29,18 +25,23 @@
 				<li class="kphl-name" id="sysName"></li>
 			</ul>
 			<!--轮播图-->
-			<section class="pc-banner">
-			    <div class="swiper-container">
-			        <div id="sysSlides" class="swiper-wrapper">
 
-			        </div>	
-			    </div>
-			    <div class="swiper-pagination"></div>
-				<div class="button">
-			     	<div class="swiper-button-prev"></div>
-			    	<div class="swiper-button-next"></div>
+			<div class="sliderbg" id="sliderbg">
+				<a class="slider-left" href="javascript:void(0)" ><img src="img/slider-left.png"/></a>
+				<ul class="slider-ul">
+					<li><img src="img/slider0.png"></li>
+					<li style="display:none;"><img src="img/slider1.png"></li>
+					<li style="display:none;"><img src="img/slider2.png"></li>
+					<li style="display:none;"><img src="img/slider3.png"></li>
+				</ul>
+				<a class="slider-right"   href="javascript:void(0)" ><img src="img/slider-right.png"/></a>
+				<div class="slider-bot">
+					<span class="current"></span>
+					<span></span>
+					<span></span>
+					<span></span>
 				</div>
-			</section>
+			</div>
 			<!--引导页主体部分-->
 			<div class="kps-main">
 				<div class="main-nav">
@@ -71,8 +72,9 @@
 					</div>
 				</div>
 			</div>
-			
-		</div>	
+
+		</div>
+		<a class="back-china" href="http://kphl.cndzkp.com">点击进入</br>画廊分布图</a>
 		<!--脚注-->
 		<div class="foot-bg" >
 			<ul class="foot clearfix">
@@ -89,34 +91,8 @@
 		</div>
 		<span id="absolutesecond" style="position:absolute;display: none;"></span>
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-		<!-- Swiper JS -->
-    	<script src="js/swiper.min.js"></script>
-
 
 		<script>
-			window.onload = function() {
-				var swiper = new Swiper('.swiper-container',{
-					autoplay:3000,
-					speed:1000,
-					autoplayDisableOnInteraction : false,
-					loop:true,
-					centeredSlides : true,
-					slidesPerView:2,
-					pagination : '.swiper-pagination',
-					paginationClickable:true,
-					prevButton:'.swiper-button-prev',
-					nextButton:'.swiper-button-next',
-					onInit:function(swiper){
-						swiper.slides[2].className="swiper-slide swiper-slide-active";//第一次打开不要动画
-						},
-					breakpoints: {
-							668: {
-								slidesPerView: 1,
-							 }
-						}
-					});
-			}
-
             $(function() {
                 $("#sysLogo").attr('src',config_sysLogo);
                 $("#sysName").html(config_sysName);
@@ -139,9 +115,10 @@
                 $("#houtaiLogin").attr('href',config_houtaiLogin);
             });
 		</script>
+		<script src="js/slider.js"></script>
 	    <!--地图引入-->
-	    <script src="https://cdn.bootcss.com/jquery/1.12.0/jquery.js" type="text/javascript" charset="utf-8"></script>
-	    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>	    
+		<script src="js/jquery1.12.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 		<script src="js/secondmap.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>
