@@ -191,10 +191,8 @@
 
 
                     <h3 class="page-title">
-
-                        科普画廊后台管理系统
+                        <div id="backSysName"></div>
                         <small style="color: #79cd38"><a href="http://bode.kepuez.cn/" target="_blank">博得科普</a></small>
-
                     </h3>
 
 
@@ -383,9 +381,9 @@
                 <div>
                     <form id="panel-form">
                         <label>展板主题：</label><input name="changedescription" type="text" class="input"/>
-                        <label>展板描述：</label><input name="paneldescription" type="text" class="input"/>
+                        <label>展板描述：</label><input id="fixPanelDesc" name="paneldescription" type="text" class="input" readonly/>
                         <label>展板图片：</label><input name="image" type="file" class="input"/>
-                        <label>本次更换人：</label><input name="modifiedby" type="text" class="input"/>
+                        <label>本次更换人：</label><input id="onetimeperson" name="modifiedby" type="text" class="input"/>
                         <label>本次更换时间：</label><input name="changedate" type="date" class="input"/>
                         <input id="galleryHiddenId" name="gallery" type="hidden"/>
                         <input id="uploadedbytran" name="uploadedbytran" type="hidden"/>
@@ -683,6 +681,7 @@
                     if(data==null) {
                         window.location.href = "/login.html";
                     } else {
+                        $("#backSysName").html(config_city+"科普画廊后台管理系统");
                         $("#username").html(data.username);
                         $("#usernamehide").val(data.username);
                         if(data.userrole!=1) {
@@ -954,6 +953,21 @@
     }
 
     function addPanelHistory() {
+        $("#fixPanelDesc").val(config_displayPanel);
+        var url = "/gallery/findAGallery";
+        $.ajax({
+            //几个参数需要注意一下
+            type: "get",//方法类型
+            dataType: "json",//预期服务器返回的数据类型
+            url: url ,//url
+            data: {"id":$("#galleryHiddenId").val()},
+            success: function (data) {
+                $("#onetimeperson").val(data.personincharge);
+            },
+            error : function() {
+                alert("异常！");
+            }
+        });
         var out1 = $('.out1');
         out1.fadeIn(500);
     }

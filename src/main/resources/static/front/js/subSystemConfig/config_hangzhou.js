@@ -10,3 +10,4 @@ var config_manageContent = '';
 var config_imageUrl = "http://kphltp.cndzkp.com";
 var config_houtaiLogin = "http://47.97.173.174:8081/background/login.html";
 var config_rest_url = "http://47.97.173.174:8081";
+var config_displayPanel = "大众科普服务中心在全大市中的其中9个县（市）区、街道、学校、企业、社区、村，承担着1835个画廊的展板更换和信息服务工作。画廊展板、挂图制作以全市近百家学会、协会为智力支撑；专业的科普作品研究制作团队，高效的社区服务，广博的科普文化知识直抵家门，让精彩科普为您的生活增添乐趣。";
