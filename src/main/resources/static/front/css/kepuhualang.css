@@ -1,0 +1,755 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	border: 0 none;
+	vertical-align: top;
+}
+
+body {
+	font-size: 20px;
+	font-family: 微软雅黑;
+}
+
+input,
+textarea {
+	outline: 0;
+	resize: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	z-index: 999;
+}
+
+a:hover {
+	color#F00;
+	z-index: 999;
+}
+
+i,
+span {
+	font-style: normal;
+	display: block;
+	z-index: 999;
+}
+
+.clearfix {
+	*zoom: 1;
+	z-index: 999;
+}
+
+.clearfix:after {
+	content: ".";
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+}
+
+body {
+	font-family: "微软雅黑";
+	margin: 0 auto;
+}
+
+.kphlfirstbg {
+	background: #bae3f5;
+	font-family: "微软雅黑";
+	margin: 0 auto;
+	padding-top: 9px;
+}
+
+
+/* 科普引导页第一页 */
+
+.map {
+	width: 1004px;
+	height: 604px;
+	background: url(../img/map.jpg) no-repeat center top;
+	margin: 0 auto;
+	position: relative;
+	padding-bottom: 40px;
+	margin-top: 80px;
+}
+.hangzhou {
+	background: url(../img/hangzhou.png)no-repeat center top;
+	z-index: 999;
+	width: 288px;
+	height: 207px;
+	position: absolute;
+	top: 124px;
+	left: 46px;
+	
+}
+
+.hangzhou:hover {
+	background: url(../img/hangzhou1.png) no-repeat center top;
+}
+
+.hangzhou a {
+	position: absolute;
+	top: 80px;
+	left: 95px;
+	display: block;
+	font-size:26px;
+	color:#fff;
+	font-weight: 500;
+}
+
+
+
+
+
+
+.ningbo {
+	width: 157px;
+	height: 160px;
+	position: absolute;
+	top: 145px;
+	left: 370px;
+	background: url(../img/ningbo.png) no-repeat center top;
+}
+
+.ningbo:hover {
+	background: url(../img/ningbo1.png) no-repeat center top;
+}
+
+.ningbo a {
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 55px;
+	display: block;
+	font-size:26px;
+	color:#fff;
+	font-weight: 500;
+}
+
+.quzhou {
+	width: 164px;
+	height: 181px;
+	position: absolute;
+	top: 288px;
+	left: 15px;
+	background: url(../img/quzhou.png) no-repeat center top;
+	
+}
+.quzhou a{
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 65px;
+	display: block;
+	font-size:26px;
+	color:#fff;
+	font-weight: 500;
+}
+.quzhou:hover {
+	background: url(../img/quzhou1.png) no-repeat center top;
+}
+
+
+.mapdenglu {
+	width: 50px;
+	height: 90px;
+	position: absolute;
+	top: 504px;
+	left: 870px;
+	cursor: pointer;
+}
+
+.mapdenglu a {
+	width: 50px;
+	height: 90px;
+	display: block;
+}
+
+
+/*引导页第二页头部公共部分*/
+
+.yindaobg {
+	width: 100%;
+	background: #fff;
+	margin: 0 auto;
+	/*border-top: 10px solid #008dd1;*/
+	he
+}
+
+.yd-header {
+	width: 1020px;
+	margin: 0 auto;
+}
+
+.yd-header li {
+	float: left;
+}
+
+.kphl-logo {
+	display: block;
+	width: 112px;
+	height: 121px;
+	margin: 4px 0 0 34px;
+}
+
+.kphl-name {
+	height: 90px;
+	font-family: "微软雅黑";
+	font-size: 38px;
+	margin-left: 10px;
+	margin-top: 46px;
+	color: #004097;
+	text-shadow: 3px 3px 4px #818181;
+}
+
+
+/*侧边栏公共部分*/
+
+.kps-main {
+	width: 1040px;
+	margin: 0 auto;
+}
+
+.aside-bg {
+	background: #f4f4f4;
+	width: 224px;
+	height: 334px;
+	border-top: 48px solid #00a0de;
+	border-bottom: 12px solid #00a1df;
+	border-radius: 6px;
+	margin-top: 8px;
+}
+
+.zhuban dt {
+	width: 224px;
+	line-height: 27px;
+	font-family: '宋体';
+	font-size: 13px;
+	text-align: center;
+	background: url(../img/zhubanbg.png) no-repeat top center;
+	background-size: 100% 100%;
+}
+
+.zhuban dt:hover {
+	color: #00A1DF;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.zhuban dd {
+	width: 170px;
+	line-height: 26px;
+	font-family: "宋体";
+	font-size: 15px;
+	margin-left: 18px;
+}
+
+.banfa dt {
+	width: 224px;
+	line-height: 27px;
+	font-family: '宋体';
+	font-size: 13px;
+	text-align: center;
+	background: url(../img/zhubanbg.png) no-repeat top center;
+	background-size: 100% 100%;
+}
+
+.banfa dt:hover {
+	color: #00A1DF;
+	font-size: 14px;
+}
+
+.banfa dd {
+	width: 180px;
+	margin: 0 auto;
+	font-family: "宋体";
+	font-size: 15px;
+	line-height: 20px;
+	color: #685e5a;
+	margin-top: 10px;
+	height: 200px;
+}
+
+
+/*查看地区*/
+
+.chakan-bg {
+	background: #fff;
+	width: 224px;
+	margin-top: 6px;
+}
+
+.chakan-bg span {
+	display: block;
+	background: url(../img/zhubanbg.png) no-repeat top center;
+	background-size: 100% 100%;
+	font-family: '宋体';
+	font-size: 16px;
+	text-align: center;
+	line-height: 27px;
+	font-weight: bold;
+	color: #685E5A;
+}
+
+.chakan-bg span:hover {
+	color: #00A1DF;
+}
+
+.diqu {
+	border: 12px solid #eee;
+}
+
+.diqu li {
+	float: left;
+	padding-right: 10px;
+	font-size: 16px;
+}
+
+.diqu li a:hover {
+	color: #00A1DF;
+}
+
+
+/*尾部*/
+/*改变*/
+.foot-bg {
+	width: 100%;
+	background: #6a6969;
+	margin-top: 40px;
+	height: 40px;
+}
+
+.foot {
+	width: 1040px;
+	margin: 0 auto;
+	padding: 0 200px 0 400px;
+	font-family: "Microsoft YaHei",sans-serif;
+}
+
+.foot li {
+	float: left;
+	color: #fff;
+	font-family: "Microsoft YaHei",sans-serif;
+	padding-right: 40px;
+	line-height: 40px;
+	font-size:16px;
+}
+.foot li a:hover{color:#348efe;}
+
+
+
+.foot-li div {
+	float: left;
+	color: #fff;
+}
+
+.foot-li a {
+	display: block;
+	float: left;
+	color: #fff;
+}
+
+.foot-right{
+	margin-left:50px ;
+	
+	
+}
+/*后台登录logo改变*/
+#houtaiLogin img{display: block;width: 171px;height: 80px;margin-left: 20px;}
+
+
+
+
+/*地图*/
+
+.ditu {
+	float: left;
+	width: 800px;
+	height: 600px;
+	background: #BAE3F5;
+	margin: 18px 0 0 10px;
+}
+
+aside {
+	float: left;
+}
+
+
+/*引导页第三页*/
+
+.main-nav {
+	line-height: 30px;
+	margin-top: 15px;
+	padding-left: 750px;
+}
+
+.main-nav span {
+	display: block;
+	float: left;
+	line-height: 30px;
+	font-family: "萍方";
+	font-size: 18px;
+
+	text-shadow: 1px 1px 1px #fff;
+	border: 2px solid #01ffff;
+	padding: 2px;
+	border-radius: 4px;
+	margin-left: 4px;
+	
+}
+.main-nav span a{color: #6f6c6c;}
+
+.main-nav span:hover {
+	background-color: #01FFFF;
+	border: 2px solid #01FFFF;
+	border-radius: 4px;
+	
+}
+
+
+/*地图*/
+
+.ditu-2 {
+	float: left;
+	width: 620px;
+	height: 520px;
+	background: #BAE3F5;
+	margin: 10px 0 0 10px;
+}
+
+.qu-name {
+	float: left;
+	width: 60px;
+	height: 620px;
+	font-family: "";
+	font-size: 36px;
+	padding: 40px 0 0 30px;
+	text-shadow: 8px 2px 8px #000;
+}
+
+
+/*第四页*/
+
+article {
+	.zhanban-main {
+		height: 800px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		width: 784px;
+		margin-top: 10px;
+		border: 1px solid #C0C0C0;
+		border-radius: 6px;
+	}
+	display: block;
+	font-family: "Open Sans";
+	font-size: 16px;
+	background-color: #eee;
+	float: left;
+}
+
+
+/**
+			* Title
+			**/
+
+.title {
+	text-align: center;
+	-webkit-transform: translateY(20px);
+	transform: translateY(20px);
+	font-size: 45px;
+	color: coral;
+	text-transform: uppercase;
+}
+
+
+/**
+			* CARD
+			**/
+
+.card {
+	float: left;
+	margin-top: 20px;
+	width: 590px;
+	height: 600px;
+	margin-left: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	-webkit-transition: box-shadow 0.5s;
+	transition: box-shadow 0.5s;
+}
+
+.card a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.card:hover {
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.card__thumb {
+	width: 590px;
+	height: 450px;
+	overflow: hidden;
+	background-color: #000;
+	-webkit-transition: height 0.5s;
+	transition: height 0.5s;
+}
+
+.card__thumb img {
+	width: 590px;
+	height: 450px;
+	border-radius: 10px 10px 0 0;
+	display: block;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+.card:hover .card__thumb {
+	height: 130px;
+}
+
+.card:hover .card__thumb img {
+	opacity: 0.6;
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+
+/**
+			* BODY
+			**/
+
+.card__body_g {
+	position: relative;
+	height: 185px;
+	padding: 20px;
+	-webkit-transition: height 0.5s;
+	transition: height 0.5s;
+}
+
+.card:hover .card__body_g {
+	height: 500px;
+}
+
+.card__category {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	height: 40px;
+	padding: 0 15px;
+	background-color: #3cb6e7;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.card__title {
+	margin: 0;
+	padding: 0 0 2px 0;
+	color: #000;
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.card__description {
+	position: absolute;
+	height: 450px;
+	left: 20px;
+	right: 20px;
+	top: 60px;
+	margin: 0;
+	padding: 0;
+	color: #666C74;
+	line-height: 27px;
+	opacity: 0;
+	-webkit-transform: translateY(45px);
+	transform: translateY(45px);
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.card-text {}
+
+.card-text dt {
+	width: 492px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 20px;
+	color: #3cb6e7;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.card-text dd {
+	line-height: 26px;
+	font-size: 16px;
+}
+
+.card-text dd b {
+	display: block;
+	float: left;
+}
+
+.card-text dd span {
+	float: left;
+	display: block;
+	width: 360px;
+}
+
+.card-text dd div {
+	font-weight: 100;
+}
+
+.card:hover .card__description {
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.genghuanjilu {
+	float: right;
+	width: 180px;
+	margin-right: 10px;
+}
+
+.genghuanjilu div {
+	font-size: 24px;
+	width: 180px;
+	line-height: 40px;
+	color: #fff;
+	border-radius: 6px;
+	background: #00A1DF;
+	margin-top: 130px;
+	text-align: center;
+	font-family: "宋体";
+}
+
+.genghuanjilu select {
+	width: 180px;
+	line-height: 30px;
+	background: #3cb6e7;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	font-family: "宋体";
+	border-radius: 2px;
+	margin-top: 20px;
+	border: none;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+#mengbanfixed {
+	position: fixed;
+	top: 0;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	z-index: 10000;
+	padding-top: 20px;
+	display: none;
+}
+
+.bengban-content {
+	width: 900px;
+	margin: 0 auto;
+	margin-top: 200px;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	height: 700px;
+}
+
+.mengban-main {
+	border: 1px solid rgba(0, 0, 0, .2);
+	background: #fff;
+	border-radius: 6px;
+	height: 800px;
+}
+
+.mengban_tit {
+	padding: 10px;
+	height: 49px;
+}
+
+.mengban_text {
+	float: left;
+	height: 19px;
+	line-height: 19px;
+	width: 550px;
+}
+
+.mengban_close {
+	float: right;
+	text-shadow: 0 1px 0 #fff;
+	font-size: 36px;
+	line-height: 19px;
+	height: 19px;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	cursor: pointer;
+	color: red;
+}
+
+#firstToNB {
+	cursor: pointer
+}
+
+#firstToHZ {
+	cursor: pointer
+}
+
+#firstToQZ {
+	cursor: pointer
+}
+
+.mengban_move {
+	height: 650px;
+	overflow-y: auto;
+}
+
+#absolutes,
+#absolutesecond,
+#absolutethird {
+	font-size: 14px;
+	background: #00A1DF;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 2px;
+}
+/*管理细则改变*/
+.glbf{width: 726px;height: 617px;padding: 183px 213px 10px 73px;background: url(../img/fifthbg.png) no-repeat top center;background-size:100% auto;}
+.kps-main{}
+#page-title{font-size:24px;font-family:"苹方";}
+.policy-points li{
+	font-size:20px;font-family:"苹方";
+}
+.glbf-header{font-size:22px;font-family:"苹方";}
+.paragraph{font-family:"苹方";font-size: 16px;}
+.para-main{overflow-y:scroll ;width: 726px;height: 410px;}
+
+/*更多改变*/
+#manageDesc a{background: #31B0D5;border: 1px solid #31B0D5;border-radius: 4px;display: block;width: 30px;line-height: 20px;color: #fff;padding: 2px;}
