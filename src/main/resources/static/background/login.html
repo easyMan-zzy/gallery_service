@@ -52,7 +52,7 @@
 				</div>
 			</div>
 			<div class="form-actions">
-				<button type="button" class="btn blue pull-right" onclick="login()">
+				<button id="loingButton" type="button" class="btn blue pull-right" onclick="login()">
 				登录 <i class="m-icon-swapright m-icon-white"></i>
 				</button>
 			</div>
@@ -170,6 +170,13 @@
 		  App.init();
 		  Login.init();
 		});
+
+        $(document).keypress(function(e) {
+            // 回车键事件
+            if(e.which == 13) {
+                login();
+            }
+        });
 
         function register() {
             $.ajax({
