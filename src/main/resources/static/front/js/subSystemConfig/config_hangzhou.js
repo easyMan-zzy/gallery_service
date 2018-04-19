@@ -1,5 +1,5 @@
 var config_city = '杭州';
-var config_city_center = [121.6035, 29.924616];
+var config_city_center = [120.175901,30.248034];
 var config_sysLogo = "img/yindaologo.png";
 var config_sysName = "科普画廊动态管理及资源共享系统(浙江省杭州市)";
 var config_sysSlides = ["img/slider1.jpg","img/slider2.jpg","img/slider3.jpg","img/slider4.jpg","img/slider5.jpg"];
