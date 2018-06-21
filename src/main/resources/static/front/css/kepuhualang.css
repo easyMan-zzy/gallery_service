@@ -316,6 +316,8 @@ body {
 
 .diqu {
 	border: 12px solid #eee;
+	height: 240px;
+    overflow: auto;
 }
 
 .diqu li {
