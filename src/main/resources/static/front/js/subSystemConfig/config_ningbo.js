@@ -3,6 +3,10 @@ var config_city_center = [121.601619, 29.928046];
 var config_sysLogo = "img/yindaologo.png";
 var config_sysName = "科普画廊动态管理及资源共享系统(浙江省宁波市)";
 var config_sysSlides = ["img/slider1.jpg","img/slider2.jpg","img/slider3.jpg","img/slider4.jpg","img/slider5.jpg"];
+var config_bannerpic = "sliderbg1";
+var bannertitle = "浙江·宁波";
+var bannerdesc = "全市共开放1249个科普画廊,</br>新增16个画廊，已提供22850次更换服务，覆盖1737多个主题<br/>（由动态管理API接口提供）";
+var dynamicnew = "2021-03-25,在张东周村完成展板更换，主题是：老年健康"
 var config_zhuban = [{name:"浙江省科学技术协会",url:"http://www.zast.org.cn/"},{name:"宁波市科学技术协会",url:"http://www.nbast.org.cn/"}];
 var config_manageMethod = "宁波市科协科普画廊管理办法";
 var config_manageDesc = '为贯彻落实市委、市政府关于加快文化大市建设和创业富民、创新强市的战略部署，推进科学技术普及，提升基层科普服务能力，提高公民科学素质，更好地引导全市科普画廊的发展。<a href="fifth.html">更多</a>';
@@ -55,5 +59,5 @@ var config_manageContent = '<div class="glbf">\n' +
     '</div>'+
     '\t\t\t\t\t\t</div>';
 var config_imageUrl = "http://kphltp.cndzkp.com";
-var config_houtaiLogin = "http://47.97.173.174:8080/background/login.html";
-var config_rest_url = "http://47.97.173.174:8080";
+var config_houtaiLogin = "http://hlsub.cndzkp.com:8080/background/login.html";
+var config_rest_url = "http://localhost:8080";

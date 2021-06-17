@@ -28,7 +28,15 @@ public class AreaServiceImpl implements AreaService {
 		return streetRepository.findByDistrictAndIsdeleted(district,new Long(0));
 	}
 
+	public List<Street> searchStreet(String name){
+		return streetRepository.findByNameContainingAndIsdeleted(name,new Long(0));
+	}
+
 	public List<Community> findCommunity(Long street){
 		return communityRepository.findByStreetAndIsdeleted(street,new Long(0));
+	}
+
+	public List<Community> searchCommunity(String name){
+		return communityRepository.findByNameContainingAndIsdeleted(name,new Long(0));
 	}
 }

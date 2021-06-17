@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface CommunityRepository extends JpaRepository<Community, Long> {
     List<Community> findByStreetAndIsdeleted(Long street, Long isdeleted);
+    List<Community> findByNameContainingAndIsdeleted(String name, Long isdeleted);
 }

@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface StreetRepository extends JpaRepository<Street, Long> {
     List<Street> findByDistrictAndIsdeleted(Long district, Long isdeleted);
+    List<Street> findByNameContainingAndIsdeleted(String name, Long isdeleted);
 }

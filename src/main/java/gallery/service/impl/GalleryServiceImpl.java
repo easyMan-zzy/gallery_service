@@ -2,7 +2,6 @@ package gallery.service.impl;
 
 import gallery.dao.DisplayPanelRepository;
 import gallery.dao.GalleryRepository;
-import gallery.domain.DisplayPanel;
 import gallery.domain.Gallery;
 import gallery.dto.GalleryDto;
 import gallery.dto.GalleryWithPanelDto;

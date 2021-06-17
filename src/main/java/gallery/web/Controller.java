@@ -89,9 +89,19 @@ public class Controller {
         return areaService.findStreet(district);
     }
 
+    @RequestMapping(value = "/area/searchstreet",method = RequestMethod.GET)
+    public List<Street> searchStreet(@RequestParam String name) {
+        return areaService.searchStreet(name);
+    }
+
     @RequestMapping(value = "/area/community",method = RequestMethod.GET)
     public List<Community> findCommunity(@RequestParam Long street) {
         return areaService.findCommunity(street);
+    }
+
+    @RequestMapping(value = "/area/searchcommunity",method = RequestMethod.GET)
+    public List<Community> searchcommunity(@RequestParam String name) {
+        return areaService.searchCommunity(name);
     }
 
     @RequestMapping(value = "/gallery/list",method = RequestMethod.GET)
