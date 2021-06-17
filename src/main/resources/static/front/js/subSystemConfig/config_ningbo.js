@@ -60,4 +60,4 @@ var config_manageContent = '<div class="glbf">\n' +
     '\t\t\t\t\t\t</div>';
 var config_imageUrl = "http://kphltp.cndzkp.com";
 var config_houtaiLogin = "http://hlsub.cndzkp.com:8080/background/login.html";
-var config_rest_url = "http://localhost:8080";
+var config_rest_url = "http://hlsub.cndzkp.com:8080";

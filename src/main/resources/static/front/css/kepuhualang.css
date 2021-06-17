@@ -228,7 +228,7 @@ body {
 .kps-main1 {
 	width: 100%;
 	margin-top:3%;
-	margin-left:13%;
+	margin-left:20%;
 	display: none;
 }
 
@@ -785,7 +785,7 @@ article {
 	padding: 2px;
 }
 /*管理细则改变*/
-.glbf{width: 726px;height: 617px;padding: 183px 213px 10px 73px;background: url(../img/manageback.png) no-repeat top center;background-size:100% auto;}
+.glbf{width: 726px;height: 617px;padding: 183px 213px 10px 150px;background: url(../img/manageback.png) no-repeat top center;background-size:100% auto;}
 
 #page-title{font-size:24px;font-family:"苹方";}
 .policy-points li{
